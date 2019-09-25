@@ -6,6 +6,7 @@ flutter开发规范
 #### 2.1 大驼峰  AdressSeleor
 #### 2.2 私有方法前面加上下划线&&大驼峰 e.g. _Address 
 #### 2.3 枚举 全部大写或者小写 
+#### e.g.
 ~~~ Flutter
 /*倒计时状态*/
 enum CountDownType {
@@ -14,5 +15,16 @@ enum CountDownType {
   ING, //倒计时中
   END, //倒计时结束，待重新计时
   ERROR,//异常
+}
+~~~
+*OR*
+~~~
+/*倒计时状态*/
+enum CountDownType {
+  start, //初始状态
+  loading, //等待
+  ing, //倒计时中
+  end, //倒计时结束，待重新计时
+  error,//异常
 }
 ~~~
